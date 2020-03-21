@@ -1,23 +1,32 @@
 <?php
 
-$name = $_POST["name"];
-$visitor_email = $_POST["email"];
-$message=$_POST["message"];
+if (isset($_POST['name'])&& isset($_POST['emal'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $to = 'sonia.klimas@gmail.com';
+    $subject = "New Subscriber";
+    $body = '<html>
+    <body>
+    <h2>Feedback- examplpe.com</h2>
+    <hr>
+    <p>Name:<br>'.$name.'</p>
+    </body>
+    </html>';
 
-$email_from= "sonia_klimas@onet.pl"
+    $headers = "From: ".$name." <".$email.">\r\n";
+    $headers .= "Reply-To: ".$email."\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8";
 
-$email_subject=["New Form Submission";
+    $send = mail($to, $subject, $body, $headers);
+    if ($send) {
+        echo '<br>';
+        echo 'Thanks for contacting me.';
 
-$email_body = "User Name: $name.\n".
-                "User Email: $visitor_email.\n".
-                    "User Message: $message.\n";]
+    } else {
+        echo 'error'
+    }
 
-
-$to="sonia.klimas@gmail.com";
-$headers="From: $email_from \r\n";
-$headers .="Reply-To: $visitor_email \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-header("Location: index.html")
+}
 
 ?>

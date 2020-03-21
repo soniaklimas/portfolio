@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+        integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="rotate"><img src="img/rotate.png" alt=""></div>
+    <div class="wrap">
+        <div class="burger">
+            <div class="burgerIcon">
+                <i class="fas fa-bars visible active"></i>
+                <i class="fas fa-times"></i></div>
+        </div>
+        <div class="navbar">
+            <nav class="main">
+                <ul>
+                    <li><a href="#" class="home"><i class="fas fa-home icon1 active"></i></a></li>
+                    <li><a href="#" class="about"><i class="fas fa-user icon2"></i></a></li>
+                    <li><a href="#" class="skills"><i class="fas fa-list-alt icon3"></i></a></li>
+                    <li><a href="#" class="work"><i class="fas fa-folder-open icon4"></i></a></li>
+                    <li><a href="#" class="contact"><i class="fas fa-envelope icon5"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav class="contactMe">
+                <ul>
+                    <li><a href="https://github.com/soniaklimas" target="blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/sonia-klimas" target="blank"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="mailto:sonia.klimas@gmail.com"><i class="fas fa-at"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <section data-section="home" id="home" class="s1">
+                <div class="introduction">
+                    <h1>Hi, I am Sonia,<br /><strong>frontend developer.</strong></h1>
+                    <span class="text"></span>
+                    <!-- <span class="txt2"></span> -->
+                </div>
+                <div class="image">
+                    <img src="img/logo.png" alt="">
+                </div>
+
+
+            </section>
+            <section data-section="about" id="about" class="s2">
+                <div class="aboutMe">
+                    <h1>About me</h1>
+                    <p>Design engineer handling heat exchangers <span>::before</span>.<br />
+                        Dogged student of Mobile and online applications and web development geek now.<br />
+                        Frontend developer with passion <span>::after</span>.<br /><br />
+                        Veggie in love with traveling and learning. About everything.<br />
+                        Well-organised person and problem solver wanted this world be better place for
+                        everyone.<br /><br />
+                        Interested in being a part of ambitious developers' team and experiencing all emotions with it.
+
+                    </p>
+                </div>
+                <div class="slider">
+                </div>
+            </section>
+            <section data-section="skills" id="skills" class="s3">
+                <div class="now">
+                    <h1>Using & Learning</h1>
+                    <div class="icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <p>
+                        Mastering HTML5, CSS3 and JavaScript is a MUST so I keep learning them.<br />
+                        I am familiar with CSS preprocessors, responsive design, developer tools and version
+                        control.<br />
+                        Recently in love with React.
+
+                    </p>
+                </div>
+                <div class="future">
+                    <h1>Soon </h1>
+                    <div class="icons">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <p>In near future I am going to learn some of task runners (npm scripts, gulp) and module loader
+                        (webpack). <br />
+                        I want to dive deeper in JavaScript and gain knowledge of node.js.
+                    </p>
+                </div>
+            </section>
+            <section data-section="work" id="work" class="s4">
+                <div class="workSlider">
+                    <div class="image">
+                        <img src="img/work1.JPG" class="slider" alt="">
+                    </div>
+
+                    <div class="description">
+                        <h1 class="slider">Rock Paper Scissors</h1>
+                        <p class="slider">First thing created in JS only for the purpose of learning.</p>
+                        <div class="buttons">
+                            <button class="code">Code</button>
+                            <button class="try">Try it</button>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span id="one" class="active"></span>
+                        <span id="two"></span>
+                        <span id="three"></span>
+                    </div>
+                </div>
+            </section>
+            <section data-section="contact" id="contact" class="s5">
+                <div class="form">
+                    <h1>Contact me</h1>
+                    <form action="" method="post">
+                        <input type="text" name="name" class="name" placeholder="Name">
+                        <input type="email" name="email" class="email" placeholder="Email" required>
+                        <input type="text" name="subject" class="subject" placeholder="Subject">
+                        <textarea name="message" class="message" cols="30" rows="7" placeholder="Message"
+                            required></textarea>
+                        <button type="submit" name="send">send</button>
+
+                    </form>
+                </div>
+                <div class="contactMobile">
+                    <ul>
+                        <li><a href="https://github.com/soniaklimas" target="blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="www.linkedin.com/in/sonia-klimas" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="mailto:sonia.klimas@gmail.com"><i class="fas fa-at"></i></a></li>
+                    </ul>
+                </div>
+                <div class="iframe">
+                    <iframe src="https://snazzymaps.com/embed/224918" width="100%" height="600px"
+                        style="border:none;"></iframe>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+    <script src="changeIcon.js"></script>
+    <script src="changeImage.js"></script>
+    <script src="slider.js"></script>
+
+</body>
+
+</html>

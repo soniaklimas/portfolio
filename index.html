@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Developer</title>
+    <link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -94,41 +95,49 @@
                     </div>
                     <p>In near future I am going to learn some of task runners (npm scripts, gulp) and module loader
                         (webpack). <br />
-                        I want to dive deeper in JavaScript and gain knowledge of node.js.
+                        I want to dive deeper in React and gain knowledge of node.js.
                     </p>
                 </div>
             </section>
             <section data-section="work" id="work" class="s4">
                 <div class="workSlider">
                     <div class="image">
-                        <img src="img/work1.jpg" class="slider" alt="">
+                        <img src="img/work1.png" class="slider" alt="">
                     </div>
 
                     <div class="description">
-                        <h1 class="slider">Rock Paper Scissors</h1>
-                        <p class="slider">First thing created in JS only for the purpose of learning.</p>
+                        <h1 class="slider">My trip</h1>
+                        <p class="slider">While making this small app I realised how important configuring your environment is. And not everything works like
+                        they show in the documentation :). I used here atomic design methodology and Storybook - together they're really nice
+                        comibination. For styling - styled components. I also tried a little Redux which was my first confrontation with it. </p>
                         <div class="buttons">
-                            <button class="code">Code</button>
-                            <button class="try">Try it</button>
+
+                            <button class="code"> <a target="blank"
+                                    href="https://github.com/soniaklimas/MyTrip">Code</a></button>
+                            <button class="try"> <a target="blank"
+                                    href="https://soniaklimas.github.io/MyTrip/">Try it</a></button>
                         </div>
                     </div>
                     <div class="dots">
                         <span id="one" class="active"></span>
                         <span id="two"></span>
                         <span id="three"></span>
+                        <span id="four"></span>
                     </div>
                 </div>
             </section>
             <section data-section="contact" id="contact" class="s5">
                 <div class="form">
                     <h1>Contact me</h1>
-                    <form action="contact.php" method="post">
-                        <input type="text" name="name" class="name" placeholder="Name">
-                        <input type="email" name="email" class="email" placeholder="Email" required>
-                        <input type="text" name="subject" class="subject" placeholder="Subject">
-                        <textarea name="message" class="message" cols="30" rows="7" placeholder="Message"
-                            required></textarea>
-                        <button type="submit" name="send">send</button>
+
+                    <form  class="form " action="contact.php" method="post">
+                        <input type="text"  name="name" class="name" placeholder="Name" required >
+                        <input type="email" name="email" class="email" placeholder="Email"  required>
+                    
+                        <input type="text"  name="subject" class="subject" placeholder="Subject">
+                        <textarea name="message"   class="message" cols="30" rows="7" placeholder="Message"
+                            required ></textarea>
+                        <input type="submit" class="submit" value="Send" ></input>
 
                     </form>
                 </div>
@@ -147,9 +156,7 @@
                 </div>
 
             </section>
-
         </main>
-
     </div>
 
 
@@ -160,6 +167,7 @@
     <script src="changeIcon.js"></script>
     <script src="changeImage.js"></script>
     <script src="slider.js"></script>
+    <script src="contact.js"></script>
 
 </body>
 

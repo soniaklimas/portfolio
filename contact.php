@@ -1,15 +1,15 @@
-<?php
+<!-- <?php
 
-if (isset($_POST['name'])&& isset($_POST['emal'])){
+if (isset($_POST['name'])&& isset($_POST['email'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $to = 'sonia.klimas@gmail.com';
-    $subject = "New Subscriber";
+    $subject = "Contact";
     $body = '<html>
     <body>
-    <h2>Feedback- examplpe.com</h2>
+    <h2>Feedback - soniaklimas.com</h2>
     <hr>
-    <p>Name:<br>'.$name.'</p>
+    <p>Name:<br>'.$name.' <br>'.$email.'</p>
     </body>
     </html>';
 
@@ -20,13 +20,38 @@ if (isset($_POST['name'])&& isset($_POST['emal'])){
 
     $send = mail($to, $subject, $body, $headers);
     if ($send) {
-        echo '<br>';
-        echo 'Thanks for contacting me.';
+        headers('Location: redirect.html');
 
     } else {
-        echo 'error'
-    }
-
+        echo 'error';}
 }
+?> -->
 
+
+<?php
+
+//Subject
+$subject ="Contact Form Submission";
+
+// Name
+$name =$_POST['name'];
+
+// Message
+$message =$_POST['message'];
+
+//Mail of Sender
+$email =$_POST['email'];
+
+//From
+$header = "From:$name<$email>";
+
+$send_contact=mail("sonia.klimas@gmail.com",$subject,$message,$header);
+
+//Check if mail was sent
+if($send_contact){
+    headers('Location: redirect.html');
+}
+else {
+echo "Error!";
+}
 ?>

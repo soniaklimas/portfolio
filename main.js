@@ -21,6 +21,7 @@ $('nav.main a').on('click', function () {
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top
     })
+    console.log("nan", this)
 })
 
 

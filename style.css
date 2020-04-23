@@ -851,13 +851,13 @@ input.email {
   }
 
   .s4 h1 {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 1rem;
   }
 
   .s4 p {
     font-size: 0.7rem;
-    padding: 3px;
+    padding: 0px 3px;
   }
 
   .s4 button {
@@ -866,7 +866,7 @@ input.email {
   }
 
   .dots span {
-    margin: 0 10px;
+    margin: 0 10px 40px;
     width: 12px;
     height: 12px;
   }

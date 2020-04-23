@@ -20,7 +20,7 @@ if (isset($_POST['name'])&& isset($_POST['email'])){
 
     $send = mail($to, $subject, $body, $headers);
     if ($send) {
-        headers('Location: redirect.html');
+        header('Location: redirect.html');
 
     } else {
         echo 'error';}
@@ -49,7 +49,7 @@ $send_contact=mail("sonia.klimas@gmail.com",$subject,$message,$header);
 
 //Check if mail was sent
 if($send_contact){
-    headers('Location: redirect.html');
+    header('Location: redirect.html');
 }
 else {
 echo "Error!";

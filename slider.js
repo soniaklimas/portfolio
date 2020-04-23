@@ -19,7 +19,7 @@ const slideList = [
     img: "img/work3.png",
     h1: "Rock Paper Scissors",
     p:
-      "First thing created in JS only for the purpose of learning. I found out how OOP works and how not works :) ",
+      "First thing created in JS only for the purpose of learning. I found out how OOP works and how it doesn't :) ",
     codeButton: "https://github.com/soniaklimas/Rock-Paper-Scissors",
     tryButton: "https://soniaklimas.github.io/Rock-Paper-Scissors/",
   },
@@ -27,7 +27,7 @@ const slideList = [
     img: "img/work4.png",
     h1: "My portfolio",
     p:
-      "I used here a little JS, a little jQuery, pure CSS and simple PHP script. This project realised me how patient I am and how much I don't like bugs :)  ",
+      "I used here a little JS, a little jQuery, pure CSS and simple PHP script. This project made me realise how patient I am and how much I don't like bugs :)  ",
     codeButton: "https://github.com/soniaklimas/portfolio",
     tryButton: "https://soniaklimas.com",
   },
